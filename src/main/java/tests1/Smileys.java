@@ -5,7 +5,7 @@ import java.util.List;
 public class Smileys {
 
 	public static int countSmileys(List<String> arr) {
-		  return 0;
+		  return arr == null ? 0 : arr.size();
 		}
 	
 	
