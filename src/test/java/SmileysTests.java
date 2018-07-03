@@ -24,9 +24,17 @@ public class SmileysTests {
 	@Test
 	public void shouldReturnOneWithInputListWithOneGoodSmiley() {
 		List<String> mySmileysList = new ArrayList<String>();
-		mySmileysList.add(":+)");
+		mySmileysList.add(":-)");
 		assertEquals(1, Smileys.countSmileys(mySmileysList));
 	}
+	
+	@Test
+	public void shouldReturnZeroWithInputListWithOneBadSmiley() {
+		List<String> mySmileysList = new ArrayList<String>();
+		mySmileysList.add("/z");
+		assertEquals(0, Smileys.countSmileys(mySmileysList));
+	}
+	
 	
 	
 }
